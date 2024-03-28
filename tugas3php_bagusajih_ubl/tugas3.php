@@ -98,8 +98,8 @@ $rata_rata = $total_nilai / $jumlah_mahasiswa;
         <thead>
             <tr>
                 <th>No</th>
+                <th>Nama Mahasiswa</th>
                 <th>NIM</th>
-                <th>Nama</th>
                 <th>Nilai</th>
                 <th>Keterangan</th>
                 <th>Grade</th>
@@ -111,8 +111,8 @@ $rata_rata = $total_nilai / $jumlah_mahasiswa;
             foreach ($data_mahasiswa as $key => $mahasiswa): ?>
                 <tr>
                     <td><?php echo $key + 1; ?></td>
-                    <td><?php echo $mahasiswa['nim']; ?></td>
                     <td><?php echo $mahasiswa['nama']; ?></td>
+                    <td><?php echo $mahasiswa['nim']; ?></td>
                     <td><?php echo $mahasiswa['nilai']; ?></td>
                     <td><?php echo getPredikat(getGrade($mahasiswa['nilai'])); ?></td>
                     <td><?php echo getGrade($mahasiswa['nilai']); ?></td>
