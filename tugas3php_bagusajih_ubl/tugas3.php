@@ -114,9 +114,9 @@ $rata_rata = $total_nilai / $jumlah_mahasiswa;
                     <td><?php echo $mahasiswa['nama']; ?></td>
                     <td><?php echo $mahasiswa['nim']; ?></td>
                     <td><?php echo $mahasiswa['nilai']; ?></td>
-                    <td><?php echo getPredikat(getGrade($mahasiswa['nilai'])); ?></td>
-                    <td><?php echo getGrade($mahasiswa['nilai']); ?></td>
                     <td><?php echo ($mahasiswa['nilai'] >= 65) ? 'Lulus' : 'Tidak Lulus'; ?></td>
+                    <td><?php echo getGrade($mahasiswa['nilai']); ?></td>
+                    <td><?php echo getPredikat(getGrade($mahasiswa['nilai'])); ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
